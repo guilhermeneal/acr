@@ -1,0 +1,20 @@
+APLICAÇÃO DE REGISTO DE UTILIZADORES — LARAGON + MYSQL WORKBENCH
+
+1. No Laragon, inicia Apache e MySQL.
+2. Abre o MySQL Workbench e cria uma ligação com:
+   Hostname: 127.0.0.1
+   Port: 3306 (confirma em Laragon > MySQL > my.ini se usares outra porta)
+   Username: root
+   Password: deixa vazio, se mantiveste os valores predefinidos do Laragon.
+3. Abre exercício4/acr05.sql no Workbench e executa-o (ícone do raio).
+   O script cria a base acr05 e as procedures create_new_user e get_all_users.
+   Atenção: o script recria a base acr05 e apaga os dados que já lá estiverem.
+4. Copia a pasta exercício4 para C:\laragon\www\exercício4.
+   (Ou coloca esta pasta dentro da pasta www que configuraste no Laragon.)
+5. Confirma as credenciais no início de db.php. Os valores entregues são os predefinidos do Laragon.
+6. Abre http://localhost/exerc%C3%ADcio4/ no browser.
+   Se preferires evitar acentos no endereço, muda o nome da pasta para exercicio4 e usa
+   http://localhost/exercicio4/.
+
+O Workbench serve para gerir/executar SQL. A aplicação PHP liga-se ao serviço MySQL
+do Laragon através do PDO, usando as mesmas credenciais da ligação do Workbench.
